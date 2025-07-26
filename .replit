@@ -1,0 +1,14 @@
+entrypoint = "index.html"
+hidden = [".config"]
+
+[interpreter]
+command = ["echo", "Open the webview to see your game!"]
+
+[nix]
+channel = "stable-22_11"
+
+[gitHubImport]
+requiredFiles = [".replit", "index.html"]
+
+[deployment]
+deploymentTarget = "static"
