@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lax Attack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui">
+            <div id="hud">
+                <div id="score">HOME 0 - 0 AWAY</div>
+                <div id="shotClock">SHOT CLOCK: 30</div>
+                <div id="stamina">STAMINA: 100%</div>
+            </div>
+
+            <div id="controls">
+                <div id="controlsInfo">
+                    <div>Move: <span class="control-key">Mouse</span> | Sprint: <span class="control-key">SHIFT</span> | Shoot: <span class="control-key">SPACE</span></div>
+                    <div>Pass: <span class="control-key">P</span> | Dodge: <span class="control-key">D</span></div>
+                </div>
+            </div>
+
+            <div class="power-meter" id="powerMeter">
+                <div class="power-fill" id="powerFill"></div>
+            </div>
+
+            <div id="instructions">
+                <h2>LAX ATTACK</h2>
+                <p>Control your attackman to score goals!</p>
+                <p>• Move mouse to direct player movement</p>
+                <p>• Hold <strong>SHIFT</strong> to sprint (drains stamina)</p>
+                <p>• Press <strong>D</strong> to dodge defenders</p>
+                <p>• Press <strong>P</strong> to pass to teammates</p>
+                <p>• Hold <strong>SPACE</strong> to charge shot, release to fire</p>
+                <br>
+                <button onclick="startGame()" style="padding: 10px 20px; font-size: 16px;">START GAME</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
