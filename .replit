@@ -1,8 +1,14 @@
-run = "python3 -m http.server 3000"
-language = "html"
+entrypoint = "index.html"
+hidden = [".config"]
+
+[interpreter]
+command = ["echo", "Open the webview to see your game!"]
 
 [nix]
 channel = "stable-22_11"
 
+[gitHubImport]
+requiredFiles = [".replit", "index.html"]
+
 [deployment]
-run = ["sh", "-c", "python3 -m http.server 3000"]
+deploymentTarget = "static"
