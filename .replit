@@ -2,9 +2,7 @@ run = "python3 -m http.server 8000"
 
 [nix]
 channel = "stable-24_05"
-
-[nix.packages]
-python3 = "python311"
+packages = ["python3"]
 
 [deployment]
 run = ["python3", "-m", "http.server", "8000"]
