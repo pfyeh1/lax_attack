@@ -1,1 +1,14 @@
-run = "python -m http.server 8000"
+run = "python3 -m http.server 8000"
+
+[nix]
+channel = "stable-24_05"
+
+[nix.packages]
+python3 = "python311"
+
+[deployment]
+run = ["python3", "-m", "http.server", "8000"]
+
+[[ports]]
+localPort = 8000
+externalPort = 80
